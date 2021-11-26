@@ -1,15 +1,16 @@
 import random
 
+#random generated number
 print("Enter the range of numbers you would like\n ")
 user_input1 = int(input('Enter first number: '))
 user_input2 = int(input('Enter second numer: '))
 x = random.randint(user_input1, user_input2)
 print(x)
 
-#x = random_number
-
+#player trys to guess the number
 player = int(input('Guess the random generated number: '))
 
+#logic for guessed number
 while player != x:
     if player == x - 5 or player == x + 5:
         print("You are close! You missed by five!!")
@@ -23,7 +24,8 @@ while player != x:
     else:
         print("Wrong number try again!!!")
         player = int(input('Guess the random generated number: '))
-        
+
+#if guessed right run this         
 if player == x:
     print("You guessed right!! You win!!!")
     
