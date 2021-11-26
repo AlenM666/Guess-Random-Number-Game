@@ -10,8 +10,10 @@ print(x)
 #player trys to guess the number
 player = int(input('Guess the random generated number: '))
 
+guess = 0
 #logic for guessed number
 while player != x:
+    guess += 1
     if player == x - 5 or player == x + 5:
         print("You are close! You missed by five!!")
         player = int(input('Guess the random generated number: '))
@@ -27,7 +29,8 @@ while player != x:
 
 #if guessed right run this         
 if player == x:
-    print("You guessed right!! You win!!!")
+    print("\nYou guessed right!! You win!!!")
+    print("You got it in", guess, "guesses")
     
 
 
