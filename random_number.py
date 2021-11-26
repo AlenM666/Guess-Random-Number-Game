@@ -2,8 +2,8 @@ import random
 
 #random generated number
 print("Enter the range of numbers you would like\n ")
-user_input1 = int(input('Enter first number: '))
-user_input2 = int(input('Enter second numer: '))
+user_input1 = int(input('Enter minimum range number: '))
+user_input2 = int(input('Enter maximum range numer: '))
 x = random.randint(user_input1, user_input2)
 print(x)
 
